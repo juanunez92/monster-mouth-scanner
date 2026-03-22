@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Creepster';
+  src: url('Creepster-Regular.ttf');
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #0f0517;
+  font-family: Arial, sans-serif;
+}
+
+
+#logo {
+  width: 400px;        /* controla el tamaño */
+  max-width: 80%;      /* responsive */
+  height: auto;
+
+  display: block;
+  margin: 0 auto 20px auto;
+
+  filter: drop-shadow(0 0 20px #7cff00);
+}
+
+
+#ui {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  width: 100%;
+}
+
+#title {
+  margin: 0;
+  color: #7cff00;
+  font-size: 64px;
+  font-family: 'Creepster', cursive;
+}
+
+#subtitle {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 24px;
+}
+
+#startBtn {
+  background: #ff7a00;
+  color: white;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 122, 0, 0.4);
+}
+
+#startBtn:hover {
+  background: #ff9333;
+}
+
+canvas {
+  display: block;
+}
+
+
+#loading {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #7cff00;
+  animation: blink 1s infinite;
+}
+
+#loadingScreen {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 20;
+}
+
+#loading {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #7cff00;
+  animation: blink 1s infinite;
+}
+
+#warning {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+#appTitle {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  font-family: 'Creepster', cursive;
+  font-size: 40px;
+  color: #7cff00;
+
+  display: none;
+  z-index: 10;
+  margin: 0;
+  width: auto;
+}

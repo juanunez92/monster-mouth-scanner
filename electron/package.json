@@ -1,0 +1,14 @@
+{
+  "name": "monster-mouth-scanner",
+  "version": "1.0.0",
+  "description": "Aplicación interactiva Halloween con cámara y FaceMesh",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Juan Antonio Núñez",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^37.2.0"
+  }
+}
